@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Poppins&family=Roboto+Slab&family=Sofia+Sans:ital,wght@0,100;0,200;0,400;1,300&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #282b2d;
+    font-family: 'Poppins', sans-serif;
+}
+
+.calculator-container {
+    background-color: #19191a;
+    width: 350px;
+    height: 700px;
+    border-radius: 30px;
+    box-shadow: 10px 10px 40px black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.calculator-display {
+    position: relative;
+    top: 5%;
+    width: 290px;
+    height: 200px;
+    border-radius: 30px;
+    padding: 30px;
+}
+
+.mode-switch-container {
+    width: 350px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 5%;
+}
+
+#mode-switch {
+    width: 70px;
+    height: 30px;
+    background-color: #202223;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 5px 5px 10px black,
+    inset -5px -5px 10px rgb(31, 31, 31);
+}
+
+#light:hover {
+    cursor: pointer;
+}
+
+#dark:hover {
+    cursor: pointer;
+}
+
+#light {
+    width: 20px;
+    height: 20px;
+}
+
+#dark {
+    width: 20px;
+    height: 20px;
+}
+
+#calculatedAns {
+    background-color: #19191a;
+    border: none;
+    text-align: end;
+    padding: 110px 0px 0px 0px;
+    width: 100%;
+    height: 50%;
+    font-size: 3rem;
+    color: grey;
+}
+
+#calculatedAns:focus {
+    outline: none;
+    color: white;
+}
+
+.buttons-container {
+    width: auto;
+    height: auto;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 78px);
+}
+
+.buttons-container button {
+    width: 60px;
+    height: 60px;
+    border-radius: 25px;
+    border: none;
+    margin-bottom: 10px;
+    background-color: #282b2d;
+    color: white;
+    font-size: 0.9rem;
+    box-shadow: 5px 5px 15px black,
+    -5px -5px 10px rgb(33, 33, 33)
+}
+
+.buttons-container button:hover {
+    cursor: pointer;
+}
+
+.equal-button {
+    grid-column: span 2;
+}
+
+.clear {
+    background-color: #fdb82c;
+}
+
+#light .active {
+    filter: brightness(0) invert(1);
+}
