@@ -13,6 +13,22 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+body.light {
+    background-color: white;
+}
+
+body.dark {
+    background-color: #282b2d;
+}
+
+#light.light-active {
+    filter: brightness(0) invert(1);
+}
+
+#dark.dark-active {
+    filter: brightness(0) invert(1);
+}
+
 .calculator-container {
     background-color: #19191a;
     width: 350px;
@@ -43,8 +59,8 @@ body {
 }
 
 #mode-switch {
-    width: 70px;
-    height: 30px;
+    width: 75px;
+    height: 35px;
     background-color: #202223;
     border-radius: 20px;
     display: flex;
@@ -106,6 +122,7 @@ body {
     background-color: #282b2d;
     color: white;
     font-size: 0.9rem;
+    font-weight: 600;
     box-shadow: 5px 5px 15px black,
     -5px -5px 10px rgb(33, 33, 33)
 }

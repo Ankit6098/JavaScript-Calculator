@@ -1,10 +1,20 @@
 var light = document.getElementById('light');
 var dark = document.getElementById('dark');
+var body = document.getElementsByTagName('body')[0];
+
 light.onclick = function() {
-    light.classList.light('active');
+    console.log("hey");
+    body.classList.remove('dark');
+    body.classList.add('light');
+    dark.classList.remove('dark-active');
+    light.classList.add('light-active');
 }
+
 dark.onclick = function() {
-    dark.classList.dark('active');
+    body.classList.remove('light');
+    body.classList.add('dark');
+    light.classList.remove('light-active');
+    dark.classList.add('dark-active');
 }
 
 var output = document.getElementById('calculatedAns');
